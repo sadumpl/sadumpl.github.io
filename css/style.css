@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+header,
+footer,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+body {
+	font-family: cursive;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header,
+.footer {
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	position: relative;
+	top: 0;
+	right: 0; 
+}
+
+a:before {
+	content: '';
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: 0.2s;
+	transform: scaleX(0);
+	border: 1px solid #000;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.main a:before {
+	background-color: #000;
+}
+
+.header a:before,
+.footer a:before {
+	border: 1px solid #fff;
+}
+
+a:hover:before {
+	transform: scaleX(1);
+}
+
+.header a,
+.footer a {
+	color: #fff;
+}
+
+.links a:before {
+	height: 4px;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.header__title {
+	width: 270px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.header__title h1 {
+	margin: 32px 0;
+}
+
+.links__moment-gallery {
+	width: 300px;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 40px;
+}
+
+.footer__contacts {
+	width: 320px;
+	text-align: center;
+	font-size: 18px;
+}
+
+
