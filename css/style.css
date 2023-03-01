@@ -47,6 +47,10 @@ textarea {
 	font-family: inherit;
 }
 
+body {
+	font-family: 'PT sans', sans-serif;
+}
+
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -82,7 +86,7 @@ a:before {
 	transition: 0.2s;
 	transform: scaleX(0);
 	border: 1px solid #000;
-	border-radius: 3px;
+	border-radius: 2px;
 	overflow: hidden;
 }
 
@@ -104,12 +108,9 @@ a:hover:before {
 	color: #fff;
 }
 
-.links a:before {
-	height: 4px;
-}
-
 .main {
 	flex: 1 1 auto;
+	background: #4239bb;
 }
 
 .header__title {
@@ -122,11 +123,39 @@ a:hover:before {
 	margin: 32px 0;
 }
 
-.links__moment-gallery {
-	width: 300px;
-	margin: 30px auto;
+.page-links {
+	display: flex;
+	justify-content: center;
+	padding: 50px 100px;
+}
+
+.page-links__column {
+	display: inline-block;
+	width: 470px;
+}
+
+.page-links__page {
+	display: inline-block;
+	width: 450px;
+	padding: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 10px;
+	background: #fff;
+}
+
+.page-links__page-name {
+	margin: 0 auto 20px;
 	text-align: center;
-	font-size: 40px;
+}
+
+.page-links__page-description {
+	margin: 0 auto 20px;
+}
+
+.page-links__link {
+	font-size: 20px;
+	text-align: center;
 }
 
 .footer__contacts {
