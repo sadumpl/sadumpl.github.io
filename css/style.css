@@ -49,6 +49,7 @@ textarea {
 
 body {
 	font-family: 'PT sans', sans-serif;
+	padding: 100px 0px 0px 0px;
 }
 
 .wrapper {
@@ -57,23 +58,25 @@ body {
 	flex-direction: column;
 }
 
-.header,
-.footer {
-	width: 100%;
-	color: #fff;
-	background-color: #000;
-}
-
 .header {
+	width: 100%;
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 1;
+	background-color: #000;
+	color: #fff;
+}
+
+.footer {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
 }
 
 .main {
 	flex: 1 1 auto;
 	background: #4239bb;
-	margin: 100px 0px 0px 0px;
 }
 
 .container {
@@ -201,13 +204,11 @@ a:hover:before {
 .footer__contacts {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	font-size: 18px;
 	padding: 41px 0px;
 }
 
-.footer__email,
-.footer__github-link {
+.footer__email {
 	display: inline-block;
 }
-
