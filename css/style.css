@@ -48,6 +48,7 @@ textarea {
 }
 
 body {
+	position: relative;
 	font-family: 'PT sans', sans-serif;
 	padding: 100px 0px 0px 0px;
 }
@@ -116,22 +117,33 @@ body {
 a {
 	text-decoration: none;
 	position: relative;
-	top: 0;
-	right: 0; 
+}
+
+.header a:link,
+.header a:active,
+.header a:visited,
+.footer a:link,
+.footer a:active,
+.footer a:visited {
+	color: #fff;
+}
+
+.main a:link,
+.main a:active,
+.main a:visited {
+	color: #000;
 }
 
 a:before {
 	content: '';
-	bottom: 0;
-	left: 0;
+	bottom: 0px;
+	right: 0px;
 	position: absolute;
-	width: 100%;
+	width: 0%;
 	height: 2px;
 	background-color: #fff;
-	transition: 0.2s;
-	transform: scaleX(0);
-	border: 1px solid #000;
-	border-radius: 2px;
+	transition: 0.3s;
+	border-radius: 1px;
 	overflow: hidden;
 }
 
@@ -139,18 +151,9 @@ a:before {
 	background-color: #000;
 }
 
-.header a:before,
-.footer a:before {
-	border: 1px solid #fff;
-}
-
 a:hover:before {
-	transform: scaleX(1);
-}
-
-.header a,
-.footer a {
-	color: #fff;
+	width: 100%;
+	left: 0px;
 }
 
 .header__title {
